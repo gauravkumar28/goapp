@@ -38,7 +38,7 @@ func getFromES() [] string{
 	    panic(err)
 	  }
   //fmt.Println(searchResult)
-  fmt.Printf("Found a total of %d tweets\n", searchResult.Hits.TotalHits)
+  fmt.Printf("Total CarData: ", searchResult.Hits.TotalHits)
 
   for _, hit := range searchResult.Hits.Hits{
       //fmt.Println(hit.Source)
